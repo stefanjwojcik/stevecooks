@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Neon Pastel Colors - 80s/90s inspired */
+  --neon-pink: #FF6EC7;
+  --neon-blue: #5DFDFF;
+  --neon-purple: #C77DFF;
+  --neon-yellow: #FFEA00;
+  --neon-green: #39FF14;
+  --neon-orange: #FF9E44;
+  --pastel-pink: #FFB3E6;
+  --pastel-blue: #B3E5FC;
+  --pastel-purple: #E1BEE7;
+  --pastel-yellow: #FFF9C4;
+  --pastel-green: #C8E6C9;
+  --dark-bg: #1a0033;
+  --darker-bg: #0d0019;
+  --grid-color: rgba(93, 253, 255, 0.2);
+
+  --background: var(--dark-bg);
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-neon-pink: var(--neon-pink);
+  --color-neon-blue: var(--neon-blue);
+  --color-neon-purple: var(--neon-purple);
+  --color-neon-yellow: var(--neon-yellow);
+  --color-neon-green: var(--neon-green);
+  --color-neon-orange: var(--neon-orange);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-pastel-blue: var(--pastel-blue);
+  --color-pastel-purple: var(--pastel-purple);
+  --color-pastel-yellow: var(--pastel-yellow);
+  --color-pastel-green: var(--pastel-green);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-pixel: 'Press Start 2P', monospace;
+}
+
+body {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Retro grid background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Pixel font for headings */
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+/* Neon glow effect */
+.neon-glow {
+  text-shadow:
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor;
+}
+
+/* Pixelated border effect */
+.pixel-border {
+  border-style: solid;
+  border-width: 4px;
+  image-rendering: pixelated;
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.3),
+    8px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.pixel-button {
+  border: 4px solid currentColor;
+  padding: 12px 24px;
+  background: transparent;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s;
+  position: relative;
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.pixel-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow:
+    6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.pixel-button:active {
+  transform: translate(2px, 2px);
+  box-shadow:
+    2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Markdown content styles */
+.markdown-content {
+  line-height: 1.8;
+}
+
+.markdown-content h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.markdown-content h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--neon-blue);
+}
+
+.markdown-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--neon-purple);
+}
+
+.markdown-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  list-style-type: square;
+}
+
+.markdown-content li {
+  margin: 0.5rem 0;
+  color: var(--pastel-blue);
+}
+
+.markdown-content strong {
+  color: var(--neon-yellow);
+  font-weight: bold;
+}
+
+.markdown-content p {
+  margin: 1rem 0;
+}
+
+.markdown-content code {
+  background: rgba(93, 253, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+  color: var(--neon-green);
+}
