@@ -34,6 +34,7 @@ const moduleNames: { [key: string]: string } = {
   salads: 'Salads',
   sauces: 'Essential Sauces',
   meals: 'Bringing It All Together',
+  pantry: 'Kitchen Staples & Tools',
 };
 
 export function getAllModules(): Module[] {
