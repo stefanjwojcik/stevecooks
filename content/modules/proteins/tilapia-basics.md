@@ -63,7 +63,24 @@ Coat both sides of the fillet and pan-sear in a very hot cast iron skillet with 
 - **Classic lemon-garlic butter**: Simple and always works
 - **Mediterranean**: Olive oil, oregano, sun-dried tomatoes, capers
 - **Soy-ginger glaze**: Soy sauce, honey, fresh ginger, sesame oil
-- **Taco-seasoned**: Cumin, chili powder, lime — serve in corn tortillas
+
+### Taco-Seasoned Tilapia (for Fish Tacos)
+A baked preparation that's perfect for fish tacos — the seasoning is bold without overpowering the fish, and the optional broil at the end gives you lightly caramelized edges.
+
+**Seasoning (per 1½ lb of fillets):**
+- ½ tsp cumin
+- ½ tsp cayenne pepper
+- 1 tsp salt
+- ¼ tsp black pepper
+
+**Method:**
+1. Preheat oven to 375°F
+2. Season both sides of each fillet with the spice blend
+3. Place in a greased baking dish
+4. Drizzle lightly with olive oil and add a small pat of butter on each fillet
+5. Bake for 20–25 minutes until fish flakes easily with a fork
+6. Optional: broil for 3–5 minutes to create lightly browned edges
+7. Break into chunks and serve in warm corn tortillas
 
 ## Key Tips
 
