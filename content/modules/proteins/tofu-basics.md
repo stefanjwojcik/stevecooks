@@ -6,8 +6,6 @@ icon: "tofu"
 videos:
   - url: "https://www.youtube.com/embed/LwDYQxdc5_Q"
     title: "How to Press and Cook Tofu Perfectly"
-  - url: "https://www.youtube.com/embed/jJi7GB5tzWo"
-    title: "5 Ways to Cook Tofu"
 ---
 
 # Mastering Tofu
